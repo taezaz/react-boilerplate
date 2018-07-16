@@ -1,0 +1,11 @@
+[include]
+src/js/*.(js|jsx)
+src/resources/*.scss
+[ignore]
+.*/test/.*
+<PROJECT_ROOT>/node_modules/*
+<PROJECT_ROOT>/dist/*
+[options]
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/components/\1'
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/containers/\1'
+include_warnings=true
