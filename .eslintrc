@@ -5,10 +5,15 @@
         "indent":           [2, 4, {"SwitchCase": 1}],
         "react/jsx-indent": [2, 4, {"SwitchCase": 1}],
         "import/no-extraneous-dependencies": 0,
+        "flowtype-errors/show-errors": 2,
+        "flowtype-errors/show-warnings": 1,
         "default-case": 0,
         "import/extensions": 0,
         "import/no-unresolved": 0
     },
+    "plugins": [
+        "flowtype-errors"
+    ],
     "env": {
         "browser": true,
         "node": true,

@@ -1,7 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-// TODO: Is this needed?
 if (process.argv.indexOf('-production') !== -1) {
     process.env.BABEL_ENV = 'production';
     process.env.NODE_ENV = 'production';

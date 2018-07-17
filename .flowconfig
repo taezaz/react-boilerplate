@@ -1,11 +1,11 @@
 [include]
-src/js/*.(js|jsx)
-src/resources/*.scss
+app/*.(js|jsx)
+app/resources/*.scss
 [ignore]
-.*/test/.*
+.*/tests/.*
 <PROJECT_ROOT>/node_modules/*
 <PROJECT_ROOT>/dist/*
 [options]
 module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/components/\1'
-module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/containers/\1'
+module.name_mapper='^containers\/\(.*\)$' -> '<PROJECT_ROOT>/app/containers/\1'
 include_warnings=true
